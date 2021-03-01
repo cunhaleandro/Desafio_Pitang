@@ -15,6 +15,7 @@
     </c:when>
     <c:otherwise>
         <p>Bem-vindo!!</p>
+        <jsp:forward page="user-list.jsp" />
     </c:otherwise>
  
 </c:choose>
