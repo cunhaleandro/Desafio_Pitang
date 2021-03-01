@@ -25,6 +25,15 @@ public class User {
 		this.email = email;
 		this.phone = phone;
 	}
+	
+
+	public User(String name, String email, String phone, String pass) {
+		super();
+		this.name = name;
+		this.email = email;
+		this.phone = phone;
+		this.pass = pass;
+	}
 
 	public User(int id, String name, String email, String phone) {
 		super();
