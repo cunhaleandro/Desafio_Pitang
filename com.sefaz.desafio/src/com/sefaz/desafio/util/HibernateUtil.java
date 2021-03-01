@@ -1,4 +1,4 @@
-package com.sefa.desafio.util;
+package com.sefaz.desafio.util;
 
 import java.util.Properties;
 
