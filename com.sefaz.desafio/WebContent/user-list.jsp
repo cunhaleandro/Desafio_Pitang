@@ -22,7 +22,6 @@
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
-                <th>phone</th>
                 <th>Actions</th>
             </tr>
             <c:forEach var="user" items="${listUser}">
@@ -30,7 +29,6 @@
                     <td><c:out value="${user.id}" /></td>
                     <td><c:out value="${user.name}" /></td>
                     <td><c:out value="${user.email}" /></td>
-                    <td><c:out value="${user.phone}" /></td>
                     <td>
                      <a href="edit?id=<c:out value='${user.id}' />">Edit</a>
                      &nbsp;&nbsp;&nbsp;&nbsp;

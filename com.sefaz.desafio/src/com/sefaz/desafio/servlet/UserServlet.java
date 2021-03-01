@@ -85,10 +85,8 @@ public class UserServlet extends HttpServlet {
     throws SQLException, IOException {
         String name = request.getParameter("name");
         String email = request.getParameter("email");
-        String phone = request.getParameter("phone");
-        String pass = request.getParameter("pass");
         
-        User newUser = new User(name, email, phone, pass);
+        User newUser = new User(name, email);
         userDao.saveUser(newUser);
         response.sendRedirect("list");
     }
@@ -98,9 +96,9 @@ public class UserServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         String name = request.getParameter("name");
         String email = request.getParameter("email");
-        String phone = request.getParameter("phone");
+       
     
-        User user = new User(id, name, email, phone);
+        User user = new User(id, name, email);
         userDao.updateUser(user);
         response.sendRedirect("list");
     }

@@ -52,22 +52,6 @@
                 </td>
             </tr>
             <tr>
-                <th>Phone: </th>
-                <td>
-                 <input type="text" name="phone" size="15"
-                   value="<c:out value='${user.phone}' />"
-                 />
-                </td>
-            </tr>
-              <tr>
-                <th>Pass: </th>
-                <td>
-                 <input type="text" name="pass" size="15"
-                   value="<c:out value='${user.pass}' />"
-                 />
-                </td>
-            </tr>
-            <tr>
              <td colspan="2" align="center">
               <input type="submit" value="Save" />
              </td>
