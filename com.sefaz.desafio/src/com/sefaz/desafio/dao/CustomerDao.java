@@ -32,7 +32,7 @@ public class CustomerDao {
         PreparedStatement ps = null;
         ResultSet rs = null;
         try{
-            ps = c.prepareStatement("select id, customerName from customer where login = ? and pass = ?");
+            ps = c.prepareStatement("select id, login from customer where login = ? and pass = ?");
             ps.setString(1, login);
             ps.setString(2, pass);
  

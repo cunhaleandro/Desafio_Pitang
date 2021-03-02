@@ -26,7 +26,7 @@ public class CustomerServlet extends HttpServlet {
         String pass_form = request.getParameter("pass"); //Pega a senha vinda do formulario
  
         try {
-            CustomerDao dao = new CustomerDao(); //cria uma instancia do DAO usuario
+            CustomerDao dao = new CustomerDao(); //cria uma instancia no DAO
             customer = dao.getLogin(login_form, pass_form);
         }
         catch ( Exception e ){
